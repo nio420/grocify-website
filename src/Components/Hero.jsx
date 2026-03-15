@@ -2,7 +2,7 @@ import React from "react";
 import { FaAward } from "react-icons/fa6";
 import Button from "./Button";
 import heroImg from "../assets/grocery.png"
-import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
 
         {/* right image */}
         <div className="flex-1">
-            <img src={heroImg} loading="lazy" alt="hero img" className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-500 " />
+            <img src={heroImg}  fetchpriority="high" alt="hero img" className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-500 " />
         </div>
       </div>
     </section>

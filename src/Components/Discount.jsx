@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import bgImg from "../assets/fresh-fruits.png";
-import CountUp from '../Components/CountUp'
+
 
 const Discount = () => {
   return (
@@ -14,7 +14,7 @@ const Discount = () => {
           {/* 20% Badge */}
           <div className="flex items-center justify-center min-w-15 md:min-w-25">
             <span className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-orange-500 font-bold transform -rotate-90 h-fit leading-none">
-              <CountUp value={"20"} duration={3000} />%
+              20%
             </span>
           </div>
 
