@@ -8,6 +8,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;

@@ -24,11 +24,12 @@ const ProcessPage = () => {
           From farm to your doorstep, our carefully designed process ensures freshness, speed, and reliability at every step.
         </p>
         </div>
+        <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
       </section> </SectionReveal>
 
       {/* TIMELINE PROCESS */}
       <SectionReveal delay={0.05} direction="up" amount={0.8}> 
-      <section className="max-w-330 mx-auto px-6 py-28">
+      <section className="max-w-7xl mx-auto px-6 py-28">
         <div className="relative">
 
           {/* vertical line */}

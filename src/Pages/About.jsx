@@ -16,6 +16,7 @@ const About = () => {
         <h1 className="text-white text-4xl md:text-5xl font-bold bg-black/40 px-8 py-4 rounded-xl backdrop-blur-md tracking-wider shadow-lg shadow-blue-200/50">
           About <span className="text-orange-400">Us</span>
         </h1>
+        <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
       </div>  </SectionReveal>
 
       {/* About Intro */}
@@ -43,7 +44,7 @@ const About = () => {
         </div>
 
         <div className="bg-zinc-100 rounded-2xl p-10 text-center">
-          <h3 className="text-5xl font-bold text-orange-500">10k+</h3>
+          <h3 className="text-5xl font-bold text-orange-500"><CountUp value="10" duration={3000} />k+</h3>
           <p className="text-zinc-600 mt-2">Happy Customers</p>
 
           <div className="grid grid-cols-2 gap-6 mt-10">
