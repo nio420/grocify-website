@@ -8,15 +8,16 @@ import { HashLink } from "react-router-hash-link";
 
 const ProcessPage = () => {
   return (
-    <div className="font-inter">
+    <div className="font-inter overflow-x-hidden">
 
       {/* HERO / BANNER */}
-      <SectionReveal delay={0.5} direction="down" amount={0.8}> 
+      {/* Changed amount to 0.2 so it reveals immediately on load */}
+      <SectionReveal delay={0.1} direction="down" amount={0.2}> 
       <section
         className="relative mx-auto px-6 py-32 md:py-35 bg-no-repeat bg-center bg-cover rounded-2xl "
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className=""> 
+        <div className="relative z-10"> 
         <h1 className="text-4xl md:text-5xl font-bold text-white text-center tracking-wider">
           Our <span className="text-orange-500">Process</span>
         </h1>
@@ -28,7 +29,8 @@ const ProcessPage = () => {
       </section> </SectionReveal>
 
       {/* TIMELINE PROCESS */}
-      <SectionReveal delay={0.05} direction="up" amount={0.8}> 
+      {/* Changed amount to 0.2 to ensure it triggers without deep scrolling */}
+      <SectionReveal delay={0.05} direction="up" amount={0.2}> 
       <section className="max-w-7xl mx-auto px-6 py-28">
         <div className="relative">
 
@@ -99,9 +101,10 @@ const ProcessPage = () => {
       </section> </SectionReveal>
 
       {/* SPLIT IMAGE + STATS */}
-      <SectionReveal delay={0.05} direction="down" amount={0.8}>
+      <SectionReveal delay={0.05} direction="down" amount={0.2}>
       <section className="bg-zinc-100 py-28">
-        <div className="max-w-330 mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+        {/* FIXED: Changed max-w-330 to max-w-7xl */}
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
           {/* placeholder for image */}
           <div className="h-105 bg-zinc-300 rounded-3xl">
@@ -137,10 +140,10 @@ const ProcessPage = () => {
           </div>
 
         </div>
-      </section>  </SectionReveal>
+      </section>   </SectionReveal>
 
       {/* CTA SECTION */}
-      <SectionReveal delay={0.05} amount={0.8}> 
+      <SectionReveal delay={0.05} amount={0.2}> 
       <section className="bg-linear-to-r from-orange-700 to-red-400 py-24 text-center text-white">
         <h2 className="text-4xl font-bold">
           Start Shopping Fresh Today
